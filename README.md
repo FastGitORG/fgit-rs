@@ -2,6 +2,18 @@
 
 [fastgit](https://fastgit.org/) 是一个适用于 GitHub 的加速服务，fgit 是为方便使用 fastgit 而开发的命令行工具。
 
+对于本身拥有代理服务的用户，我们推荐您使用 git 本身的代理功能。
+
+在 `~/.gitconfig` 中加入如下配置：
+
+```ini
+[http]
+    proxy = http://127.0.0.1:1234
+[https]
+    proxy = http://127.0.0.1:1234
+; 1234 为代理软件提供的端口号
+```
+
 ## 功能
 
 ### clone
