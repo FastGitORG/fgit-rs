@@ -18,7 +18,7 @@
 
 ### clone
 
-`fgit clone <url> <dir>`。
+`fgit clone <url> <dir>`
 
 `<url>` 必须存在，其应该为一个 GitHub 的 repo 链接（https/ssh 协议均可）。
 
