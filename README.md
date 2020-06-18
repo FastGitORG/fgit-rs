@@ -59,6 +59,6 @@ fgit 的源代码以 MIT LICENSE 开源
 fgit 仍处于早期阶段，请审慎使用。
 
 * [ ] 对 `git clone` 的所有命令行选项提供支持
-* [ ] 由于 fastgit 的反代 headers 中不存在 `content-length` ，下载功能可能会受到影响
+* [x] ~~由于 fastgit 的反代 headers 中不存在 `content-length` ，下载功能可能会受到影响~~已由上游修复
 * [ ] `--verbose` flag
 * [ ] 完善注释
