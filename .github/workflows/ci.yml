@@ -1,9 +1,9 @@
-name: Rust
+name: CI
 
 on: [push]
 
 jobs:
-  build:
+  build-linux:
     runs-on: ubuntu-latest
 
     steps:
@@ -49,6 +49,13 @@ jobs:
 
       - name: Build
         run: cargo build --release
+
+      - name: Get current time
+        uses: 1466587594/current-time@v1
+        id: current-time
+        with:
+          format: YYYYMMDD_HHmmss
+          utcOffset: "+08:00"
 
       - name: Upload artifact
         uses: actions/upload-artifact@v1
