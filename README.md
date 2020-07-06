@@ -14,6 +14,10 @@
 ; 1234 为代理软件提供的端口号
 ```
 
+fgit-rs 目前仍为早期版本，如有bug/建议请开issue。
+
+fgit-rs 在到达 1.0 版本之前暂无 release 计划，但可在 [GitHub Actions](https://github.com/fastgitorg/fgit-rs/actions) 中下载编译好的二进制文件。 
+
 ## 功能
 
 ### clone
@@ -57,8 +61,6 @@ fgit 的源代码以 MIT LICENSE 开源
 
 
 ## to-do && 已知问题
-
-fgit 仍处于早期阶段，请审慎使用。
 
 * [ ] 对 `git clone` 的所有命令行选项提供支持
 * [x] ~~由于 fastgit 的反代 headers 中不存在 `content-length` ，下载功能可能会受到影响~~已由上游修复
