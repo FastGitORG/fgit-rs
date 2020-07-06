@@ -42,20 +42,18 @@ pub fn cli() {
         pull()
     }
 
-    if let Some(ref matchses) = matches.subcommand_matches("dl") {
-        dl(matchses.value_of("url").unwrap());
+    if let Some(ref matches) = matches.subcommand_matches("dl") {
+        dl(matches.value_of("url").unwrap());
     }
 
-    if let Some(ref matchses) = matches.subcommand_matches("clone") {
-        let url = matchses.value_of("url").unwrap();
-        let mut dir;
-
-        if matchses.is_present("dir") {
-            dir = matchses.value_of("dir").unwrap();
+    if let Some(ref matches) = matches.subcommand_matches("clone") {
+        let url = matches.value_of("url").unwrap();
+        let dir = if matches.is_present("dir") {
+            matches.value_of("dir").unwrap()
         } else {
             let re = Regex::new(r".*/(.*?)($|.git)").unwrap();
-            dir = re.captures(url).unwrap().get(1).unwrap().as_str();
-        }
+            re.captures(url).unwrap().get(1).unwrap().as_str()
+        };
 
         clone(url, dir);
     }

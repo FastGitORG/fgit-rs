@@ -20,6 +20,19 @@ jobs:
       - name: Build
         run: cargo build --release
 
+      - name: Get current time
+        uses: 1466587594/current-time@v1
+        id: current-time
+        with:
+          format: YYYYMMDD_HHmmss
+          utcOffset: "+08:00"
+
+      - name: Upload artifact
+        uses: actions/upload-artifact@v1
+        with:
+          name: fgit-amd64-linux-${{ steps.current-time.outputs.formattedTime }}
+          path: ./target/release/fgit
+
   build-win:
     runs-on: windows-latest
 
@@ -36,3 +49,9 @@ jobs:
 
       - name: Build
         run: cargo build --release
+
+      - name: Upload artifact
+        uses: actions/upload-artifact@v1
+        with:
+          name: fgit-amd64-windows-${{ steps.current-time.outputs.formattedTime }}
+          path: ./target/release/fgit.exe

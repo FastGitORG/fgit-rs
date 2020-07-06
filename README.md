@@ -2,7 +2,7 @@
 
 [fastgit](https://fastgit.org/) 是一个适用于 GitHub 的加速服务，fgit 是为方便使用 fastgit 而开发的命令行工具。
 
-对于本身拥有代理服务的用户，我们推荐您使用 git 本身的代理功能。
+对于本身拥有代理服务的用户，我们推荐您使用 git 自身的代理功能。
 
 在 `~/.gitconfig` 中加入如下配置：
 
@@ -43,6 +43,8 @@ fgit 将支持的 url 替换为 fastgit 提供的镜像，然后下载。
 ## LICENSE
 
 使用 fgit 时，我们自动认为您同意了 [fastgit 的服务条款](https://doc.fastgit.org/zh-cn/tos.html) 。
+
+如果您对该条款持有不同意见，请勿使用本程序。
 
 fgit 的源代码以 MIT LICENSE 开源
 
