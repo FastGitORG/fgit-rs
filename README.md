@@ -1,6 +1,6 @@
 # fgit
 
-[fastgit](https://fastgit.org/) 是一个适用于 GitHub 的加速服务，fgit 是为方便使用 fastgit 而开发的命令行工具。
+[FastGit](https://fastgit.org/) 是一个适用于 GitHub 的加速服务，fgit 是为方便使用 FastGit 而开发的命令行工具。
 
 对于本身拥有代理服务的用户，我们推荐您使用 git 自身的代理功能。
 
@@ -28,7 +28,7 @@ fgit-rs 在到达 1.0 版本之前暂无 release 计划，但可在 [GitHub Acti
 
 `<dir>` 是可选项，即指定 clone 到本地时的文件夹名称。
 
-fgit 首先会把 github 的链接替换为 fasthub 的链接，然后调用 `git clone` 命令，最后将 `remote "origin"` 的 url 再替换为 github 的链接。
+fgit 首先会把 github 的链接替换为 FastGit 的链接，然后调用 `git clone` 命令，最后将 `remote "origin"` 的 url 再替换为 github 的链接。
 
 ### pull
 
@@ -40,13 +40,13 @@ fgit 首先会把 github 的链接替换为 fasthub 的链接，然后调用 `gi
 
 `fgit dl <url>`
 
-fgit 将支持的 url 替换为 fastgit 提供的镜像，然后下载。
+fgit 将支持的 url 替换为 FastGit 提供的镜像，然后下载。
 
 支持的链接可见 [fastgit 的文档](https://doc.fastgit.org/zh-cn/guide.html) 。
 
 ## LICENSE
 
-使用 fgit 时，我们自动认为您同意了 [fastgit 的服务条款](https://doc.fastgit.org/zh-cn/tos.html) 。
+使用 fgit 时，我们自动认为您同意了 [FastGit 的服务条款](https://doc.fastgit.org/zh-cn/tos.html) 。
 
 如果您对该条款持有不同意见，请勿使用本程序。
 
