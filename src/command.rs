@@ -8,7 +8,7 @@ pub fn dl(url: &str) {
     let url = replace_url(url).unwrap();
     println!("url: {}", url);
 
-    download(&url);
+    download(&url).unwrap();
 }
 
 pub fn clone(url: &str, dir: &str) {
